@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="1538px" height="1025px" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <desc>This graphic links to an external image
+  </desc>
+  <image preserveAspectRatio="xMinYMin meet"
+         x="0" y="0" width="1538" height="1025"
+         xlink:href="https://lh3.googleusercontent.com/mvdyrPw6KTdh8FSyQ43BL01DKjQAaGY1KMTx296lNFdqkxTUss9zChHEE27fDVLEU3S044CibAjPNIqm0DNAX0uHwhr4hmL5aclI6gqC3rOyallMhlKS03boMtZnkEw_QeJffFqVfBdJwkNXfr1p0xZm-RNM0NhKs3kokiu1uJCVkGEcDWYAnXlwqTyITT576B5CtugMjFnpUD5Jg647CX57H9xArocQ_fe5QiF2mGicd1m7ka4iH5PQhuLsU1w8pHts1bdwYHgz-EPTBS8SXDYYFwIIIr1L8bSOr-RuUa7wjRbPDvI9F9W2bdhsTsFK6_p4DQbkOOp0uGGisOqsBGdy_oG4pSnX5AwSfTpDE3Ic--AT9JY11S7dHrMmMzVPmYAc2QZ8bY7pyH0Fm6vJ4zvzEkEbxT_oS7zuA1j4HZ3ZNStvHRh05S2gBKy_uEICTrgPJkO4ry6gK8LZirps8C3IbjmpvoNYZuSwag6smu7DtGrBf9l_n1WUKN128BJme260nF8ZY9Cq8INNojxwNh7ETO64NY3ZG-aNE6PejGqO1UKxou2gdrPAgchNFgEx6ebafizsE48-hV5pHN2GDC13NcJ87B-orMAHaWIH7R1kO6AA7AZe9m1Vq6o0Qpi02T1v66huR5P0gdZH9SE9zM-Mqm6GY3TaOsXb03pFU4OdvXXyqywT2GBuLmwuuA=w3065-h1914-no?authuser=0">
+    <title>My image</title>
+  </image>
+  <rect x="0" y="0" width="1538" height="1025"
+        fill="none" stroke="blue" stroke-width="12"  />
+
+
+  <g fill="none" stroke="black" stroke-width="3" >
+    <line x1="0" y1="1.5" x2="1538" y2="1.5" />
+    <line x1="1.5" y1="0" x2="1.5" y2="1025" />
+  </g>
+  <g fill="red" stroke="none" >
+    <rect x="0" y="0" width="3" height="3" />
+    <rect x="1535" y="0" width="3" height="3" />
+    <rect x="0" y="1022" width="3" height="3" />
+  </g>
+  <g font-size="14" font-family="Verdana" >
+    <text x="10" y="20">(0,0)</text>
+    <text x="240" y="20">(300,0)</text>
+    <text x="10" y="90">(0,100)</text>
+  </g>
+
+</svg>

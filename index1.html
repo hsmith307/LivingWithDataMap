@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<link type="text/css" rel="stylesheet" href="styles.css"/>
+
+<title>basemap -- div</title>
+<div id="map"></div>
+<div style="width: 500px;">Base.png -- cropped for Nigeria.
+Use pan & zoom to center the image in the div.
+Look at console.log to get the translation & scale that you like best.
+</div>
+
+<script>
+
+var imgHeight = 1025, imgWidth = 1538,    // Image dimensions (don't change these)
+    width =  500, height = 270;           // Dimensions of cropped region
+    offsetX = -550, offsetY = -400;       // Initial offset -- tweaked this to center Nigeria in <div>
+
+svg = d3.select("div#map")
+    .style("width",  width + "px")
+    .style("height", height + "px")
+  .append("svg").append("g")
+    .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
+  .append("g");
+
+svg.append("rect")
+    .attr("class", "overlay")
+    .attr("width", width + "px")
+    .attr("height", height + "px");
+
+svg.append("image")
+    .attr("width",  imgWidth + "px")
+    .attr("height", imgHeight + "px")
+    .attr("x", offsetX + "px")
+    .attr("y", offsetY + "px")
+    .attr("xlink:href", "https://lh3.googleusercontent.com/mvdyrPw6KTdh8FSyQ43BL01DKjQAaGY1KMTx296lNFdqkxTUss9zChHEE27fDVLEU3S044CibAjPNIqm0DNAX0uHwhr4hmL5aclI6gqC3rOyallMhlKS03boMtZnkEw_QeJffFqVfBdJwkNXfr1p0xZm-RNM0NhKs3kokiu1uJCVkGEcDWYAnXlwqTyITT576B5CtugMjFnpUD5Jg647CX57H9xArocQ_fe5QiF2mGicd1m7ka4iH5PQhuLsU1w8pHts1bdwYHgz-EPTBS8SXDYYFwIIIr1L8bSOr-RuUa7wjRbPDvI9F9W2bdhsTsFK6_p4DQbkOOp0uGGisOqsBGdy_oG4pSnX5AwSfTpDE3Ic--AT9JY11S7dHrMmMzVPmYAc2QZ8bY7pyH0Fm6vJ4zvzEkEbxT_oS7zuA1j4HZ3ZNStvHRh05S2gBKy_uEICTrgPJkO4ry6gK8LZirps8C3IbjmpvoNYZuSwag6smu7DtGrBf9l_n1WUKN128BJme260nF8ZY9Cq8INNojxwNh7ETO64NY3ZG-aNE6PejGqO1UKxou2gdrPAgchNFgEx6ebafizsE48-hV5pHN2GDC13NcJ87B-orMAHaWIH7R1kO6AA7AZe9m1Vq6o0Qpi02T1v66huR5P0gdZH9SE9zM-Mqm6GY3TaOsXb03pFU4OdvXXyqywT2GBuLmwuuA=w3065-h1914-no?authuser=0");
+
+function zoom() {
+  svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+  console.log("translate: " + d3.event.translate + ", scale: " + d3.event.scale);
+}
+
+</script>
+</body>

@@ -2,7 +2,8 @@ h1 {
     color: white;
     font-size: 38px;
     font-family: 'Poppins', sans-serif;
-    /* margin-left: 650px; */
+    margin-left: 30%;
+    margin-right: 30%;
     text-align: center;
     background-color: turquoise;
     width: 340px;

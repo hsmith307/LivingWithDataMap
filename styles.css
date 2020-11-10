@@ -1,8 +1,9 @@
 h1 {
     color: white;
-    font-size: 40px;
+    font-size: 38px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 650px;
+    /* margin-left: 650px; */
+    text-align: center;
     background-color: turquoise;
     width: 340px;
     padding: 10px
@@ -13,22 +14,57 @@ h1:hover {
     background-color: white;
 }
 
+
 h2 {
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: lighter;
-    margin-left: 470px;
+    position: relative;
+    text-align: left;
 }
 
 img {
-    margin-left: 200px;
+    margin-left: 10em;
 }
 
 svg {
-    margin-left: 300px;
+    margin-left: 10em;
 }
 
 p {
     font-family: 'Space Grotesk', sans-serif;
     margin-left: 400px;
 }
+.img2{
+    margin: 0%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+
+  .column1 {
+    float: left;
+    width: 33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ li {
+  font-size: 2vw;
+  font-style: normal;
+  color: whitesmoke;
+  display: inline-block;
+  writing-mode: horizontal-tb;
+  font-family: monospace;
+ }
+
+ .info {
+     margin: 0%;
+ }

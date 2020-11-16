@@ -1,4 +1,4 @@
-h1 {
+.main{
     color: white;
     font-size: 38px;
     font-family: 'Poppins', sans-serif;
@@ -10,7 +10,9 @@ h1 {
     padding: 10px
 }
 
-h1:hover {
+
+
+.main:hover {
     color: turquoise;
     background-color: white;
 }

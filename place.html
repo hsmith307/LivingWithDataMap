@@ -315,10 +315,35 @@
     <div id="search">
         <h1>Search a Station Code to see its Wordle.</h1>
         <input type="text" onchange="searchTool()" id="input-box">
+        <div id="img-holder"></div>
     </div>
 
     <!-- Photos stored for search feature -->
-    <img id="airport" src="ReviewWordles\Airport.png" height="200" style="display: none;"/>
+    <img id="AIRPORT" src="ReviewWordles\Airport.png" height="200" style="display: none;"/>
+    <img id="AC" src="ReviewWordles\ArtsCenter.png" height="200" style="display: none;"/>
+    <img id="ASH" src="ReviewWordles\Ashby.png" height="200" style="display: none;"/>
+    <img id="AV" src="ReviewWordles\Avondale.png" height="200" style="display: none;"/>
+    <img id="B/O" src="ReviewWordles\Brookhaven.png" height="200" style="display: none;"/>
+    <img id="CH" src="ReviewWordles\Chamblee.png" height="200" style="display: none;"/>
+    <img id="CC" src="ReviewWordles\CivicCenter.png" height="200" style="display: none;"/>
+    <img id="CP" src="ReviewWordles\CollegePark.png" height="200" style="display: none;"/>
+    <img id="DR" src="ReviewWordles\Decatur.png" height="200" style="display: none;"/>
+    <img id="DV" src="ReviewWordles\Doraville.png" height="200" style="display: none;"/>
+    <img id="DW" src="ReviewWordles\Dunwoody.png" height="200" style="display: none;"/>
+    <img id="EL" src="ReviewWordles\EastLake.png" height="200" style="display: none;"/>
+    <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
+    <img id="E/CP" src="ReviewWordles\EdgewoodCandler.png" height="200" style="display: none;"/>
+    <img id="G" src="ReviewWordles\garnett.png" height="200" style="display: none;"/>
+    <img id="GS" src="ReviewWordles\GeorgiaState.png" height="200" style="display: none;"/>
+    <img id="CNN" src="ReviewWordles\GWCC.CNNCenter.png" height="200" style="display: none;"/>
+    <img id="HEH" src="ReviewWordles\HamiltonEHolmes.png" height="200" style="display: none;"/>
+    <img id="IC" src="ReviewWordles\IndianCreek.png" height="200" style="display: none;"/>
+    <img id="IP/R" src="ReviewWordles\InmanParkReynoldstown.png" height="200" style="display: none;"/>
+    <img id="KEN" src="ReviewWordles\Kensington.png" height="200" style="display: none;"/>
+    <img id="KM" src="ReviewWordles\KingMemorial.png" height="200" style="display: none;"/>
+    <img id="EP" src="ReviewWordles\LakeWoodFort.png" height="200" style="display: none;"/>
+    <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
+    <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
 
     <!-- Comparison Tool -->
     <div id="comparison-tool">
@@ -353,11 +378,10 @@
             
         }
 
-
-
         function searchTool() {
             var inputValue = document.getElementById("input-box").value;
-            document.getElementById(inputValue).style.display = "block";
+            var inputSrc = document.getElementById(inputValue).src
+            document.getElementById("img-holder").innerHTML = "<img src=" + inputSrc + " height="+ 200 + ">";
         }
         
     </script>

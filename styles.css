@@ -148,3 +148,15 @@ p {
     color: white;
     height: 80px;
   }
+
+  /* format for table */
+
+  th {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+  }
+
+  td {
+    font-family: 'Space Grotesk', sans-serif;
+  }

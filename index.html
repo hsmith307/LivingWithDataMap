@@ -52,7 +52,9 @@ svg = d3.select("body").append("svg")
 svg.append("rect")
     .attr("class", "overlay")
     .attr("width", width + "px")
-    .attr("height", height + "px");
+    .attr("height", height + "px")
+    .style("stroke", "#D3D3D3")
+    .style("stroke-width", 3);
 
 svg = svg.append("g")
     .attr("transform", "translate(" + translate0 + ")scale(" + scale0 + ")")

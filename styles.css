@@ -23,7 +23,8 @@ h2 {
     font-style: italic;
     font-weight: lighter;
     position: relative;
-    text-align: left;
+    margin: auto;
+    text-justify: auto;
 }
 
 img {
@@ -36,7 +37,9 @@ svg {
 
 p {
     font-family: 'Space Grotesk', sans-serif;
-    margin-left: 400px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
 }
 .img2{
     margin: 0%;

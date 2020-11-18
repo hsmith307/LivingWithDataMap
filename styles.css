@@ -23,8 +23,7 @@ h2 {
     font-style: italic;
     font-weight: lighter;
     position: relative;
-    margin: auto;
-    text-justify: auto;
+    text-align: left;
 }
 
 img {
@@ -37,9 +36,7 @@ svg {
 
 p {
     font-family: 'Space Grotesk', sans-serif;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
+    margin-left: 400px;
 }
 .img2{
     margin: 0%;
@@ -80,40 +77,3 @@ p {
     align-items: center;
     margin-left: 500px;
 }
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 20px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    width: 100%; /* Full width */
-    height: 100%;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  #img-holder {
-      padding: 0%;
-      width: 0;
-      margin: 0%;
-      border: 1px;
-  }

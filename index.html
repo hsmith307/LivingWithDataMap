@@ -14,14 +14,8 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="data.html">Data </a>
-        <a href="ack.html">Acknowledgements </a>
-        <a href="place.html">Reviews</a>
-      </div>
-    <!-- <h1 id="h1"><a class="main" href="index.html">A Marta Odyssey</a></h1> -->
-    <!-- <p> 
+    <h1 id="h1"><a class="main" href="index.html">A Marta Odyssey</a></h1>
+    <p> 
         <div class="row">
             <div class="column1">
                 <li><a href="data.html">Data </a></li>
@@ -33,15 +27,14 @@
                 <li><a href="place.html">Reviews</a></li>
                 </div>
                 
-        </div>
-    </p> -->
-
-    <h2 style="margin-left: 600px;">Population Around Marta</h2>
+            </div>
+    </p>
+    <h2>An activity created by Hayden Smith and Jodi Bartolo</h2>
     <p>
-        Click on the circle representing a map station to see the most common words used in reviews about that station. The different colors on the map, as explained by the legend below,
-        represent different population growth rates around Atlanta.  
+        Please keep scrolling down to see the legends for the map and learn more about the experience. 
     </p>
 
+    <h2>Population Around Marta</h2>
     <img id="map-legend" src="legend_pop_marta.png"/>
 
     <!-- Image map -->
@@ -66,50 +59,41 @@
         
             To do this, just inspect the page because the myfunc() function tells you where the station click 
             coordinates are, so just move it until it is over the station's circle. The three coords are width, height, and radius. -->
-        <area id="cnn" shape="circle" coords="677, 750, 10" onclick="searchTool('CNN')">
-        <area id="vc" shape="circle" coords="645, 750, 10" onclick="searchTool('VC')">
-        <area id="ash" shape="circle" coords="607, 750, 10" onclick="searchTool('ASH')">
-        <area id="wl" shape="circle" coords="588, 755, 10" onclick="searchTool('WL')">
-        <area id="heh" shape="circle" coords="555, 755, 10" onclick="searchTool('HEH')">
-        <area id="bh" shape="circle" coords="576, 721, 10" onclick="searchTool('BH')">
-        <area id="gs" shape="circle" coords="741, 753, 10" onclick="searchTool('GS')">
-        <area id="km" shape="circle" coords="768, 754, 10" onclick="searchTool('KM')">
-        <area id="ip/r" shape="circle" coords="798, 754, 10" onclick="searchTool('IP/R')">
-        <area id="e/cp" shape="circle" coords="835, 754, 10" onclick="searchTool('E/CP')">
-        <area id="el" shape="circle" coords="855, 757, 10" onclick="searchTool('EL')">
-        <area id="dr" shape="circle" coords="880, 757, 10" onclick="searchTool('DR')">
-        <area id="av" shape="circle" coords="909, 756, 10" onclick="searchTool('AV')">
-        <area id="ken" shape="circle" coords="936, 755, 10" onclick="searchTool('KEN')">
-        <area id="ic" shape="circle" coords="958, 753, 10" onclick="searchTool('IC')">
-
-        //
-        <area id="pc" shape="circle" coords="711, 735, 7" onclick="searchTool('PC')">
-        <area id="cc" shape="circle" coords="711, 720, 7" onclick="searchTool('CC')">
-        <area id="na" shape="circle" coords="711, 705, 7" onclick="searchTool('NA')">
-        <area id="mt" shape="circle" coords="711, 690, 7" onclick="searchTool('MT')">
-        <area id="ac" shape="circle" coords="711, 676, 7" onclick="searchTool('AC')">
-
-        //
-        <area id="lc" shape="circle" coords="731, 658, 10" onclick="searchTool('LC')">
-        //
-        <area id="l" shape="circle" coords="777, 635, 10" onclick="searchTool('L')">
-        <area id="b/o" shape="circle" coords="816, 611, 10" onclick="searchTool('B/O')">
-        <area id="ch" shape="circle" coords="847, 577, 10" onclick="searchTool('CH')">
-        <area id="dv" shape="circle" coords="891, 537, 10" onclick="searchTool('DV')">
-        //
-        <area id="b" shape="circle" coords="746, 609, 10" onclick="searchTool('B')">
-        <area id="mc" shape="circle" coords="751, 547, 10" onclick="searchTool('MC')">
-        <area id="dw" shape="circle" coords="776, 505, 10" onclick="searchTool('DW')">
-        <area id="ss" shape="circle" coords="761, 463, 10" onclick="searchTool('SS')">
-        <area id="ns" shape="circle" coords="767, 410, 10" onclick="searchTool('NS')">
+        <area id="cnn" shape="circle" coords="627, 930, 10" onclick="myfunc('CNN')">
+        <area id="vc" shape="circle" coords="627, 930, 10" onclick="myfunc('VC')">
+        <area id="ash" shape="circle" coords="627, 930, 10" onclick="myfunc('ASH')">
+        <area id="wl" shape="circle" coords="627, 930, 10" onclick="myfunc('WL')">
+        <area id="heh" shape="circle" coords="627, 930, 10" onclick="myfunc('HEH')">
+        <area id="bh" shape="circle" coords="627, 930, 10" onclick="myfunc('BH')">
+        <area id="gs" shape="circle" coords="627, 930, 10" onclick="myfunc('GS')">
+        <area id="km" shape="circle" coords="627, 930, 10" onclick="myfunc('KM')">
+        <area id="ip/r" shape="circle" coords="627, 930, 10" onclick="myfunc('IP/R')">
+        <area id="e/cp" shape="circle" coords="627, 930, 10" onclick="myfunc('E/CP')">
+        <area id="el" shape="circle" coords="627, 930, 10" onclick="myfunc('EL')">
+        <area id="dr" shape="circle" coords="627, 930, 10" onclick="myfunc('DR')">
+        <area id="av" shape="circle" coords="627, 930, 10" onclick="myfunc('AV')">
+        <area id="ken" shape="circle" coords="627, 930, 10" onclick="myfunc('KEN')">
+        <area id="ic" shape="circle" coords="627, 930, 10" onclick="myfunc('IC')">
+        <area id="pc" shape="circle" coords="627, 930, 10" onclick="myfunc('PC')">
+        <area id="cc" shape="circle" coords="627, 930, 10" onclick="myfunc('CC')">
+        <area id="na" shape="circle" coords="627, 930, 10" onclick="myfunc('NA')">
+        <area id="mt" shape="circle" coords="627, 930, 10" onclick="myfunc('MT')">
+        <area id="ac" shape="circle" coords="627, 930, 10" onclick="myfunc('AC')">
+        <area id="lc" shape="circle" coords="627, 930, 10" onclick="myfunc('LC')">
+        <area id="l" shape="circle" coords="627, 930, 10" onclick="myfunc('L')">
+        <area id="b/o" shape="circle" coords="627, 930, 10" onclick="myfunc('B/O')">
+        <area id="ch" shape="circle" coords="627, 930, 10" onclick="myfunc('CH')">
+        <area id="dv" shape="circle" coords="627, 930, 10" onclick="myfunc('DV')">
+        <area id="b" shape="circle" coords="627, 930, 10" onclick="myfunc('B')">
+        <area id="dw" shape="circle" coords="627, 930, 10" onclick="myfunc('DW')">
+        <area id="ss" shape="circle" coords="627, 930, 10" onclick="myfunc('SS')">
+        <area id="ns" shape="circle" coords="627, 930, 10" onclick="myfunc('NS')">
     </map>
 
     <!-- photo display div after a user clicks on a station -->
-    <div id="img-div" class="modal">
-        <span class="close">&times;</span>
+    <div id="img-div">
         <div id="img-holder"></div>
     </div>
-      
 
         <!-- Photos stored for search feature -->
         <img id="AIRPORT" src="ReviewWordles\Airport.png" height="200" style="display: none;"/>
@@ -187,10 +171,6 @@ function zoom() {
 
 </script>
 
- </div>
-
-<h3>Who is taking Marta?</h3>
-
 <script type="text/javascript">
     // hide all of the pictures
     document.getElementById("airportpic").style.visibility = "hidden";
@@ -238,10 +218,6 @@ function zoom() {
 </body>
 
 <script type="text/javascript">
-
-    // formatting
-
-
     console.log("this is being recognized")
 
     function myfunc(id) {
@@ -251,16 +227,8 @@ function zoom() {
     function searchTool(id) {
         console.log("search tool")
         var inputSrc = document.getElementById(id).src
-        modal.style.display = "block";
         document.getElementById("img-holder").innerHTML = "<img src=" + inputSrc + " height="+ 200 + ">";
     }
-
-    //deals with the modal coming up. Span is the x to close out
-    var modal = document.getElementById("img-div");
-    var span = document.getElementsByClassName("close")[0];
-        span.onclick = function() {
-            modal.style.display = "none";
-}
 </script>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">

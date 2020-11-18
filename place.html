@@ -316,6 +316,8 @@
         <h1>Search a Station Code to see its Wordle.</h1>
         <input type="text" onchange="searchTool()" id="input-box">
         <div id="img-holder"></div>
+
+
     </div>
 
     <!-- Photos stored for search feature -->
@@ -349,7 +351,7 @@
     <img id="MT" src="ReviewWordles\Midtown.png" height="200" style="display: none;"/>
     <img id="NA" src="ReviewWordles\NorthAvenue.png" height="200" style="display: none;"/>
     <img id="NS" src="ReviewWordles\NorthSprings.png" height="200" style="display: none;"/>
-    <img id="O" src="ReviewWordles\Oakland.png" height="200" style="display: none;"/>
+    <img id="OC" src="ReviewWordles\Oakland.png" height="200" style="display: none;"/>
     <img id="PC" src="ReviewWordles\PeachtreeCenter.png" height="200" style="display: none;"/>
     <img id="S" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>
     <img id="VC" src="ReviewWordles\VineCity.png" height="200" style="display: none;"/>
@@ -372,6 +374,42 @@
 
         <input type="text" onchange="compTool()" id="station4">
         <div id="img-holder4"></div>
+
+                <!-- the map -->
+                <div>
+            
+                    <script>
+        
+                        var imgHeight = 1025, imgWidth = 1538,      // Image dimensions (don't change these)
+                            width =  1100, height = 850,             // Dimensions of cropped region
+                            translate0 = [-290, -180], scale0 = 1;  // Initial offset & scale
+                        
+                        svg = d3.select("body").append("svg")
+                            .attr("width",  width + "px")
+                            .attr("height", height + "px");
+                        
+                        svg.append("rect")
+                            .attr("class", "overlay")
+                            .attr("width", width + "px")
+                            .attr("height", height + "px");
+                        
+                        svg = svg.append("g")
+                            .attr("transform", "translate(" + translate0 + ")scale(" + scale0 + ")")
+                            .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
+                        .append("g");
+                        
+                        svg.append("image")
+                            .attr("width",  imgWidth + "px")
+                            .attr("height", imgHeight + "px")
+                            .attr("xlink:href", "population_marta2.png");
+                        
+                        function zoom() {
+                        svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+                        console.log("translate: " + d3.event.translate + ", scale: " + d3.event.scale);
+                        }
+                        
+                        </script>
+                </div>
     </div>
 
     </body>
@@ -389,7 +427,7 @@
             if (val == "Table View") {
                 document.getElementById("table-view").style.display = "block";
                 document.getElementById("comparison-tool").style.display = "none";   
-                document.getElementById("search").style.display = "none"; 
+                document.getElementById("search").style.display = "none";
             } else if (val == "Search") {
                 document.getElementById("table-view").style.display = "none";
                 document.getElementById("search").style.display = "block";

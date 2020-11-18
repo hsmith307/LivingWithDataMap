@@ -34,6 +34,9 @@
         Please keep scrolling down to see the legends for the map and learn more about the experience. 
     </p>
 
+    <h2>Population Around Marta</h2>
+    <img id="map-legend" src="legend_pop_marta.png"/>
+
 
     
 <script>
@@ -59,7 +62,7 @@ svg = svg.append("g")
 svg.append("image")
     .attr("width",  imgWidth + "px")
     .attr("height", imgHeight + "px")
-    .attr("xlink:href", "drawnmap_withpopheatmap.png");
+    .attr("xlink:href", "population_marta2.png");
 
 function zoom() {
   svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
@@ -68,7 +71,27 @@ function zoom() {
 
 </script>
 
-<h2>
+
+
+<h3>Who is taking Marta?</h3>
+
+<script type="text/javascript">
+    // hide all of the pictures
+    document.getElementById("airportpic").style.visibility = "hidden";
+
+    function clicked(id) {
+        var visStatus = document.getElementById(id).style.visibility;
+        if (visStatus == "visible") {
+            document.getElementById(id).style.visibility = "hidden";
+        } else {
+            document.getElementById(id).style.visibility = "visible";
+        }
+
+    }
+</script>
+
+
+<!-- <h2>
 
     <div class = "row">
         <div class ="column">
@@ -95,7 +118,7 @@ function zoom() {
     5) Lindbergh Station
 </div>
 </div>
-</h2>
+</h2> -->
 </body>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">

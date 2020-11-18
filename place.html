@@ -28,8 +28,408 @@
                 </div>
             </div>
     </p>
-    <h2></h2>
+
+    <select name="Reviews" id="reviews" onchange="toolToggle()">
+        <option value="Table View" id="tv">Table View</option>
+        <option value="Search" id="s">Search</option>
+        <option value="Comparison Tool" id="ct">Comparison Tool</option>
+      </select>
+    
+    <table id="table-view" style="width:100%">
+        <tr>
+            <th>Station Code</th>
+            <th>Station Full Name</th>
+            <th>Most Frequent Words</th>
+            <th>Map Location</th>
+          </tr>
+          <tr>
+            <td>AIRPORT</td>
+            <td>Airport</td>
+            <td>
+                <img src="ReviewWordles\Airport.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>CP</td>
+            <td>College Park</td>
+            <td>
+                <img src="ReviewWordles\CollegePark.png" height="200"/>
+            </td>
+            <td>Jackson</td>
+          </tr>
+          <tr>
+            <td>EP</td>
+            <td>East Point</td>
+            <td>
+                <img src="ReviewWordles\EastPoint.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>L/FM</td>
+            <td>Lakewood/Fort McPherson</td>
+            <td>
+                <img src="ReviewWordles\LakeWoodFort.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>OC</td>
+            <td>Oakland City</td>
+            <td>
+                <img src="ReviewWordles\Oakland.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>WE</td>
+            <td>West End</td>
+            <td>
+                <img src="ReviewWordles\WestEnd.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>Garnett</td>
+            <td>
+                <img src="ReviewWordles\garnett.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>FP</td>
+            <td>Five Points</td>
+            <td>
+                <img src="ReviewWordles\FivePoints.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>CNN</td>
+            <td>GWCC/CNN Center</td>
+            <td>
+                <img src="ReviewWordles\GWCC.CNNCenter.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>VC</td>
+            <td>Vine City</td>
+            <td>
+                <img src="ReviewWordles\VineCity.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>ASH</td>
+            <td>Ashby</td>
+            <td>
+                <img src="ReviewWordles\Ashby.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>WL</td>
+            <td>West Lake</td>
+            <td>
+                <img src="ReviewWordles\WestLake.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>HEH</td>
+            <td>Hamilton E. Holmes</td>
+            <td>
+                <img src="ReviewWordles\HamiltonEHolmes.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>BH</td>
+            <td>Bankhead</td>
+            <td>
+              
+            </td>
+          </tr>
+          <tr>
+            <td>Georgia State</td>
+            <td>GS</td>
+            <td>
+                <img src="ReviewWordles\GeorgiaState.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>KM</td>
+            <td>King Memorial</td>
+            <td>
+                <img src="ReviewWordles\KingMemorial.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>IP/R</td>
+            <td>Inman Park/Reynoldstown</td>
+            <td>
+                <img src="ReviewWordles\InmanParkReynoldstown.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>E/CP</td>
+            <td>Edgewood/Candler Park</td>
+            <td>
+                <img src="ReviewWordles\EdgewoodCandler.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>EL</td>
+            <td>East Lake</td>
+            <td>
+                <img src="ReviewWordles\EastLake.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>DR</td>
+            <td>Decatur</td>
+            <td>
+                <img src="ReviewWordles\Decatur.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>AV</td>
+            <td>Avondale</td>
+            <td>
+                <img src="ReviewWordles\Avondale.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>KEN</td>
+            <td>Kensington</td>
+            <td>
+                <img src="ReviewWordles\Kensington.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>IC</td>
+            <td>Indian Creek</td>
+            <td>
+                <img src="ReviewWordles\IndianCreek.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>PC</td>
+            <td>Peachtree Center</td>
+            <td>
+                <img src="ReviewWordles\PeachtreeCenter.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>CC</td>
+            <td>Civic Center</td>
+            <td>
+                <img src="ReviewWordles\CivicCenter.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>NA</td>
+            <td>North Avenue</td>
+            <td>
+                <img src="ReviewWordles\NorthAvenue.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>MT</td>
+            <td>Midtown</td>
+            <td>
+                <img src="ReviewWordles\Midtown.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>AC</td>
+            <td>Arts Center</td>
+            <td>
+                <img src="ReviewWordles\ArtsCenter.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>LC</td>
+            <td>Lindbergh Center</td>
+            <td>
+                <img src="ReviewWordles\Lindbergh.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>Buckhead</td>
+            <td>
+                <img src="ReviewWordles\Buckhead.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>MC</td>
+            <td>Medical Center</td>
+            <td>
+                <img src="ReviewWordles\MedicalCenter.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>DW</td>
+            <td>Dunwoody</td>
+            <td>
+                <img src="ReviewWordles\Dunwoody.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>SS</td>
+            <td>Sandy Springs</td>
+            <td>
+                <img src="ReviewWordles\SandySprings.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>NS</td>
+            <td>North Springs</td>
+            <td>
+                <img src="ReviewWordles\NorthSprings.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>Lenox</td>
+            <td>
+                <img src="ReviewWordles\Lenox.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>B/O</td>
+            <td>Brookhaven/Oglethorpe</td>
+            <td>
+                <img src="ReviewWordles\Brookhaven.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>CH</td>
+            <td>Chamblee</td>
+            <td>
+                <img src="ReviewWordles\Chamblee.png" height="200"/>
+            </td>
+          </tr>
+          <tr>
+            <td>DV</td>
+            <td>Doraville</td>
+            <td>
+                <img src="ReviewWordles\Doraville.png" height="200"/>
+            </td>
+          </tr>
+    </table>
+
+    <!-- Search Feature -->
+    <div id="search">
+        <h1>Search a Station Code to see its Wordle.</h1>
+        <input type="text" onchange="searchTool()" id="input-box">
+        <div id="img-holder"></div>
+    </div>
+
+    <!-- Photos stored for search feature -->
+    <img id="AIRPORT" src="ReviewWordles\Airport.png" height="200" style="display: none;"/>
+    <img id="AC" src="ReviewWordles\ArtsCenter.png" height="200" style="display: none;"/>
+    <img id="ASH" src="ReviewWordles\Ashby.png" height="200" style="display: none;"/>
+    <img id="AV" src="ReviewWordles\Avondale.png" height="200" style="display: none;"/>
+    <img id="B/O" src="ReviewWordles\Brookhaven.png" height="200" style="display: none;"/>
+    <img id="B" src="ReviewWordles\Buckhead.png" height="200" style="display: none;"/>
+    <img id="CH" src="ReviewWordles\Chamblee.png" height="200" style="display: none;"/>
+    <img id="CC" src="ReviewWordles\CivicCenter.png" height="200" style="display: none;"/>
+    <img id="CP" src="ReviewWordles\CollegePark.png" height="200" style="display: none;"/>
+    <img id="DR" src="ReviewWordles\Decatur.png" height="200" style="display: none;"/>
+    <img id="DV" src="ReviewWordles\Doraville.png" height="200" style="display: none;"/>
+    <img id="DW" src="ReviewWordles\Dunwoody.png" height="200" style="display: none;"/>
+    <img id="EL" src="ReviewWordles\EastLake.png" height="200" style="display: none;"/>
+    <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
+    <img id="E/CP" src="ReviewWordles\EdgewoodCandler.png" height="200" style="display: none;"/>
+    <img id="G" src="ReviewWordles\garnett.png" height="200" style="display: none;"/>
+    <img id="GS" src="ReviewWordles\GeorgiaState.png" height="200" style="display: none;"/>
+    <img id="CNN" src="ReviewWordles\GWCC.CNNCenter.png" height="200" style="display: none;"/>
+    <img id="HEH" src="ReviewWordles\HamiltonEHolmes.png" height="200" style="display: none;"/>
+    <img id="IC" src="ReviewWordles\IndianCreek.png" height="200" style="display: none;"/>
+    <img id="IP/R" src="ReviewWordles\InmanParkReynoldstown.png" height="200" style="display: none;"/>
+    <img id="KEN" src="ReviewWordles\Kensington.png" height="200" style="display: none;"/>
+    <img id="KM" src="ReviewWordles\KingMemorial.png" height="200" style="display: none;"/>
+    <img id="L/FM" src="ReviewWordles\LakeWoodFort.png" height="200" style="display: none;"/>
+    <img id="L" src="ReviewWordles\Lenox.png" height="200" style="display: none;"/>
+    <img id="LC" src="ReviewWordles\Lindbergh.png" height="200" style="display: none;"/>
+    <img id="MC" src="ReviewWordles\MedicalCenter.png" height="200" style="display: none;"/>
+    <img id="MT" src="ReviewWordles\Midtown.png" height="200" style="display: none;"/>
+    <img id="NA" src="ReviewWordles\NorthAvenue.png" height="200" style="display: none;"/>
+    <img id="NS" src="ReviewWordles\NorthSprings.png" height="200" style="display: none;"/>
+    <img id="O" src="ReviewWordles\Oakland.png" height="200" style="display: none;"/>
+    <img id="PC" src="ReviewWordles\PeachtreeCenter.png" height="200" style="display: none;"/>
+    <img id="S" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>
+    <img id="VC" src="ReviewWordles\VineCity.png" height="200" style="display: none;"/>
+    <img id="WE" src="ReviewWordles\WestEnd.png" height="200" style="display: none;"/>
+    <img id="WL" src="ReviewWordles\WestLake.png" height="200" style="display: none;"/>
+    <img id="SS" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>
+
+
+    <!-- Comparison Tool -->
+    <div id="comparison-tool">
+        <h1>Pick up tp 4 Marta Stations to compare.</h1>
+        <input type="text" onchange="compTool()" id="station1">
+        <div id="img-holder1"></div>
+
+        <input type="text" onchange="compTool()" id="station2">
+        <div id="img-holder2"></div>
+
+        <input type="text" onchange="compTool()" id="station3">
+        <div id="img-holder3"></div>
+
+        <input type="text" onchange="compTool()" id="station4">
+        <div id="img-holder4"></div>
+    </div>
+
     </body>
+    
+    <script type="text/javascript">
+        // make sure all the tools are hidden to begin with
+        document.getElementById("search").style.display = "none";
+        document.getElementById("comparison-tool").style.display = "none";
+
+        // display different tools based on user input
+        function toolToggle() {
+            console.log("it changed")
+            var val = document.getElementById("reviews").value;
+            console.log(val);
+            if (val == "Table View") {
+                document.getElementById("table-view").style.display = "block";
+                document.getElementById("comparison-tool").style.display = "none";   
+                document.getElementById("search").style.display = "none"; 
+            } else if (val == "Search") {
+                document.getElementById("table-view").style.display = "none";
+                document.getElementById("search").style.display = "block";
+                document.getElementById("comparison-tool").style.display = "none";    
+            } else if (val == "Comparison Tool") {
+                document.getElementById("table-view").style.display = "none";
+                document.getElementById("search").style.display = "none";
+                document.getElementById("comparison-tool").style.display = "block";    
+            }
+            
+        }
+
+        function searchTool() {
+            var inputValue = document.getElementById("input-box").value;
+            var inputSrc = document.getElementById(inputValue).src
+            document.getElementById("img-holder").innerHTML = "<img src=" + inputSrc + " height="+ 200 + ">";
+        }
+
+        function compTool() {
+            var inputValue1 = document.getElementById("station1").value;
+            var inputSrc1 = document.getElementById(inputValue1).src
+            document.getElementById("img-holder1").innerHTML = "<img src=" + inputSrc1 + " height="+ 200 + ">";
+
+            var inputValue2 = document.getElementById("station2").value;
+            var inputSrc2 = document.getElementById(inputValue2).src
+            document.getElementById("img-holder2").innerHTML = "<img src=" + inputSrc2 + " height="+ 200 + ">";
+
+            
+            var inputValue3 = document.getElementById("station3").value;
+            var inputSrc3 = document.getElementById(inputValue3).src
+            document.getElementById("img-holder3").innerHTML = "<img src=" + inputSrc3 + " height="+ 200 + ">";
+
+            
+            var inputValue4 = document.getElementById("station4").value;
+            var inputSrc4 = document.getElementById(inputValue4).src
+            document.getElementById("img-holder4").innerHTML = "<img src=" + inputSrc4 + " height="+ 200 + ">";
+        }
+        
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">

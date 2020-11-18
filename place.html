@@ -324,6 +324,7 @@
     <img id="ASH" src="ReviewWordles\Ashby.png" height="200" style="display: none;"/>
     <img id="AV" src="ReviewWordles\Avondale.png" height="200" style="display: none;"/>
     <img id="B/O" src="ReviewWordles\Brookhaven.png" height="200" style="display: none;"/>
+    <img id="B" src="ReviewWordles\Buckhead.png" height="200" style="display: none;"/>
     <img id="CH" src="ReviewWordles\Chamblee.png" height="200" style="display: none;"/>
     <img id="CC" src="ReviewWordles\CivicCenter.png" height="200" style="display: none;"/>
     <img id="CP" src="ReviewWordles\CollegePark.png" height="200" style="display: none;"/>
@@ -341,13 +342,36 @@
     <img id="IP/R" src="ReviewWordles\InmanParkReynoldstown.png" height="200" style="display: none;"/>
     <img id="KEN" src="ReviewWordles\Kensington.png" height="200" style="display: none;"/>
     <img id="KM" src="ReviewWordles\KingMemorial.png" height="200" style="display: none;"/>
-    <img id="EP" src="ReviewWordles\LakeWoodFort.png" height="200" style="display: none;"/>
-    <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
-    <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
+    <img id="L/FM" src="ReviewWordles\LakeWoodFort.png" height="200" style="display: none;"/>
+    <img id="L" src="ReviewWordles\Lenox.png" height="200" style="display: none;"/>
+    <img id="LC" src="ReviewWordles\Lindbergh.png" height="200" style="display: none;"/>
+    <img id="MC" src="ReviewWordles\MedicalCenter.png" height="200" style="display: none;"/>
+    <img id="MT" src="ReviewWordles\Midtown.png" height="200" style="display: none;"/>
+    <img id="NA" src="ReviewWordles\NorthAvenue.png" height="200" style="display: none;"/>
+    <img id="NS" src="ReviewWordles\NorthSprings.png" height="200" style="display: none;"/>
+    <img id="O" src="ReviewWordles\Oakland.png" height="200" style="display: none;"/>
+    <img id="PC" src="ReviewWordles\PeachtreeCenter.png" height="200" style="display: none;"/>
+    <img id="S" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>
+    <img id="VC" src="ReviewWordles\VineCity.png" height="200" style="display: none;"/>
+    <img id="WE" src="ReviewWordles\WestEnd.png" height="200" style="display: none;"/>
+    <img id="WL" src="ReviewWordles\WestLake.png" height="200" style="display: none;"/>
+    <img id="SS" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>
+
 
     <!-- Comparison Tool -->
     <div id="comparison-tool">
-        <h1>Pick two Marta Stations to compare.</h1>
+        <h1>Pick up tp 4 Marta Stations to compare.</h1>
+        <input type="text" onchange="compTool()" id="station1">
+        <div id="img-holder1"></div>
+
+        <input type="text" onchange="compTool()" id="station2">
+        <div id="img-holder2"></div>
+
+        <input type="text" onchange="compTool()" id="station3">
+        <div id="img-holder3"></div>
+
+        <input type="text" onchange="compTool()" id="station4">
+        <div id="img-holder4"></div>
     </div>
 
     </body>
@@ -382,6 +406,26 @@
             var inputValue = document.getElementById("input-box").value;
             var inputSrc = document.getElementById(inputValue).src
             document.getElementById("img-holder").innerHTML = "<img src=" + inputSrc + " height="+ 200 + ">";
+        }
+
+        function compTool() {
+            var inputValue1 = document.getElementById("station1").value;
+            var inputSrc1 = document.getElementById(inputValue1).src
+            document.getElementById("img-holder1").innerHTML = "<img src=" + inputSrc1 + " height="+ 200 + ">";
+
+            var inputValue2 = document.getElementById("station2").value;
+            var inputSrc2 = document.getElementById(inputValue2).src
+            document.getElementById("img-holder2").innerHTML = "<img src=" + inputSrc2 + " height="+ 200 + ">";
+
+            
+            var inputValue3 = document.getElementById("station3").value;
+            var inputSrc3 = document.getElementById(inputValue3).src
+            document.getElementById("img-holder3").innerHTML = "<img src=" + inputSrc3 + " height="+ 200 + ">";
+
+            
+            var inputValue4 = document.getElementById("station4").value;
+            var inputSrc4 = document.getElementById(inputValue4).src
+            document.getElementById("img-holder4").innerHTML = "<img src=" + inputSrc4 + " height="+ 200 + ">";
         }
         
     </script>

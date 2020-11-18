@@ -71,9 +71,27 @@ function zoom() {
 
 </script>
 
+
+
 <h3>Who is taking Marta?</h3>
 
-<h2>
+<script type="text/javascript">
+    // hide all of the pictures
+    document.getElementById("airportpic").style.visibility = "hidden";
+
+    function clicked(id) {
+        var visStatus = document.getElementById(id).style.visibility;
+        if (visStatus == "visible") {
+            document.getElementById(id).style.visibility = "hidden";
+        } else {
+            document.getElementById(id).style.visibility = "visible";
+        }
+
+    }
+</script>
+
+
+<!-- <h2>
 
     <div class = "row">
         <div class ="column">
@@ -100,7 +118,7 @@ function zoom() {
     5) Lindbergh Station
 </div>
 </div>
-</h2>
+</h2> -->
 </body>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">

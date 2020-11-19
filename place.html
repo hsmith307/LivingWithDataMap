@@ -10,16 +10,32 @@
   pointer-events: all;
 }
 
+body, html {
+    background-color: #d3d3d3;
+}
+
+select {
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  margin-left: 710px;
+  margin-bottom: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 </style>
 </head>
 
 <body>
   <div class="topnav">
     <a class="active" href="index.html">Home</a>
-    <a href="data.html">Data </a>
+    <a class="about" href="vis.html">Visualization Tool</a>
+    <a href="data.html">About</a>
     <a href="ack.html">Acknowledgements </a>
-    <a href="place.html">Reviews</a>
+    <a href="place.html">Explore</a>
   </div>
+
+  <h1 style="font-size: 50px">Explore</h1>
 
     <select name="Reviews" id="reviews" onchange="toolToggle()">
         <option value="Table View" id="tv">Table View</option>

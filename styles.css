@@ -12,10 +12,6 @@
     padding: 10px
 }
 
-body {
-  background-color: #d3d3d3;
-}
-
 .main:hover {
     color: turquoise;
     background-color: white;
@@ -23,12 +19,15 @@ body {
 
 h1 {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 60px;
+  font-size: 130px;
   text-align: center;
-  color: rgb(53, 47, 47);
-  text-shadow: 2px 2px #064d99;
+  color: #fca313;
+  text-shadow: 2px 2px gray;
 }
 
+#title {
+  padding-top: 300px;
+}
 
 h2 {
   font-family: 'Space Grotesk', sans-serif;
@@ -132,19 +131,18 @@ p {
 
   .topnav {
     overflow: hidden;
-    background-color: #333;
-    height: 80px;
-    margin-bottom: 20px;
+    height: 50px;
+    margin-left: 500px;
   }
 
   .topnav a {
     float: left;
-    color: #f2f2f2;
-    font-family: 'Space Grotesk', sans-serif;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 20px;
   }
   
@@ -154,12 +152,6 @@ p {
     height: 80px;
   }
   
-  .topnav a.active {
-    background-color: #064d99;
-    color: white;
-    height: 80px;
-  }
-
   /* format for table */
 
   th {
@@ -171,3 +163,4 @@ p {
   td {
     font-family: 'Montserrat', sans-serif;
   }
+  

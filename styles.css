@@ -133,6 +133,7 @@ p {
     overflow: hidden;
     height: 50px;
     margin-left: 500px;
+    background-color: #d3d3d3;
   }
 
   .topnav a {

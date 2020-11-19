@@ -21,19 +21,46 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   text-decoration: underline;
   text-decoration-color: grey;
   margin: 0;
   
 }
 
+.topnav {
+    position: fixed;
+    margin-top: -80px;
+}
+
+.grid-container {
+  display: grid;
+  margin: 200px;
+  grid-template-columns: auto auto auto;
+  background-color: none;
+  padding: 10px;
+  height: 500px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  height: 300px;
+  margin: 20px;
+}
+
+#about-marta {
+    grid-column-start: span 2;
+}
 
 </style>
 </head>
 
 <body>
 
-    
+    <!-- TOP NAVIGATION -->
     <div class="topnav">
         <a class="active" href="index.html">Home</a>
         <a class="about" href="vis.html">Visualization Tool</a>
@@ -41,229 +68,24 @@ body, html {
         <a href="ack.html">Acknowledgements </a>
         <a href="place.html">Explore</a>
       </div>
-    <!-- <h1 id="h1"><a class="main" href="index.html">A Marta Odyssey</a></h1> -->
-    <!-- <p> 
-        <div class="row">
-            <div class="column1">
-                <li><a href="data.html">Data </a></li>
-                </div>
-                <div class="column1">
-                <li><a href="ack.html">Acknowledgements </a></li>
-                </div>
-                <div class="column1">
-                <li><a href="place.html">Reviews</a></li>
-                </div>
-                
-        </div>
-    </p> -->
 
+    <!-- TITLE -->
     <h1 id="title">A MARTA Odyssey</h1>
 
-    <!-- <h2 style="margin-left: 600px;">Population Around Marta</h2>
-    <p>
-        Click on the circle representing a map station to see the most common words used in reviews about that station. The different colors on the map, as explained by the legend below,
-        represent different population growth rates around Atlanta.  
-    </p> -->
-
-    <!-- <img id="map-legend" src="legend_pop_marta.png"/> -->
-
-    <!-- Image map -->
-    <!-- <img src="popmap.png" alt="Marta Stations around the Growing Atlanta Population" usemap="#martapop" width="1254" height="1496">
-
-    <map name="martapop">
-        <area id="airport" shape="circle" coords="637, 970, 25" onclick="searchTool('AIRPORT')">
-        <area id="cp" shape="circle" coords="627, 930, 25" onclick="searchTool('CP')">
-        <area id="ep" shape="circle" coords="622, 890, 25" onclick="searchTool('EP')">
-        <area id="lfm" shape="circle" coords="610, 860, 10" onclick="searchTool('L/FM')">
-        <area id="oc" shape="circle" coords="610, 840, 10" onclick="searchTool('O')">
-        <area id="we" shape="circle" coords="610, 820, 10" onclick="searchTool('WE')">
-        <area id="gar" shape="circle" coords="650, 780, 10" onclick="searchTool('G')">
-        <area id="fp" shape="circle" coords="715, 750, 10" onclick="searchTool('FP')"> -->
-
-        <!-- instructions/helpful tips for jodi! start below this as the above ones are already
-            done. so as soon as you get the click radius over that station's circle, 
-            change the function from myfunct to searchTool, as done above. What is in parens is already good to go. 
-            
-            So all that needs to be done below is change the coordinates (width, height, radius) until it
-            works for the user to click over it
-        
-            To do this, just inspect the page because the myfunc() function tells you where the station click 
-            coordinates are, so just move it until it is over the station's circle. The three coords are width, height, and radius. -->
-        <!-- <area id="cnn" shape="circle" coords="677, 750, 10" onclick="searchTool('CNN')">
-        <area id="vc" shape="circle" coords="645, 750, 10" onclick="searchTool('VC')">
-        <area id="ash" shape="circle" coords="607, 750, 10" onclick="searchTool('ASH')">
-        <area id="wl" shape="circle" coords="588, 755, 10" onclick="searchTool('WL')">
-        <area id="heh" shape="circle" coords="555, 755, 10" onclick="searchTool('HEH')">
-        <area id="bh" shape="circle" coords="576, 721, 10" onclick="searchTool('BH')">
-        <area id="gs" shape="circle" coords="741, 753, 10" onclick="searchTool('GS')">
-        <area id="km" shape="circle" coords="768, 754, 10" onclick="searchTool('KM')">
-        <area id="ip/r" shape="circle" coords="798, 754, 10" onclick="searchTool('IP/R')">
-        <area id="e/cp" shape="circle" coords="835, 754, 10" onclick="searchTool('E/CP')">
-        <area id="el" shape="circle" coords="855, 757, 10" onclick="searchTool('EL')">
-        <area id="dr" shape="circle" coords="880, 757, 10" onclick="searchTool('DR')">
-        <area id="av" shape="circle" coords="909, 756, 10" onclick="searchTool('AV')">
-        <area id="ken" shape="circle" coords="936, 755, 10" onclick="searchTool('KEN')">
-        <area id="ic" shape="circle" coords="958, 753, 10" onclick="searchTool('IC')">
-
-        //
-        <area id="pc" shape="circle" coords="711, 735, 7" onclick="searchTool('PC')">
-        <area id="cc" shape="circle" coords="711, 720, 7" onclick="searchTool('CC')">
-        <area id="na" shape="circle" coords="711, 705, 7" onclick="searchTool('NA')">
-        <area id="mt" shape="circle" coords="711, 690, 7" onclick="searchTool('MT')">
-        <area id="ac" shape="circle" coords="711, 676, 7" onclick="searchTool('AC')">
-
-        //
-        <area id="lc" shape="circle" coords="731, 658, 10" onclick="searchTool('LC')">
-        //
-        <area id="l" shape="circle" coords="777, 635, 10" onclick="searchTool('L')">
-        <area id="b/o" shape="circle" coords="816, 611, 10" onclick="searchTool('B/O')">
-        <area id="ch" shape="circle" coords="847, 577, 10" onclick="searchTool('CH')">
-        <area id="dv" shape="circle" coords="891, 537, 10" onclick="searchTool('DV')">
-        //
-        <area id="b" shape="circle" coords="746, 609, 10" onclick="searchTool('B')">
-        <area id="mc" shape="circle" coords="751, 547, 10" onclick="searchTool('MC')">
-        <area id="dw" shape="circle" coords="776, 505, 10" onclick="searchTool('DW')">
-        <area id="ss" shape="circle" coords="761, 463, 10" onclick="searchTool('SS')">
-        <area id="ns" shape="circle" coords="767, 410, 10" onclick="searchTool('NS')">
-    </map>
-
-    photo display div after a user clicks on a station -->
-    <!-- <div id="img-div" class="modal">
-        <span class="close">&times;</span>
-        <div id="img-holder"></div>
-    </div> -->
-      
-
-        <!-- Photos stored for search feature -->
-        <!-- <img id="AIRPORT" src="ReviewWordles\Airport.png" height="200" style="display: none;"/>
-        <img id="AC" src="ReviewWordles\ArtsCenter.png" height="200" style="display: none;"/>
-        <img id="ASH" src="ReviewWordles\Ashby.png" height="200" style="display: none;"/>
-        <img id="AV" src="ReviewWordles\Avondale.png" height="200" style="display: none;"/>
-        <img id="B/O" src="ReviewWordles\Brookhaven.png" height="200" style="display: none;"/>
-        <img id="B" src="ReviewWordles\Buckhead.png" height="200" style="display: none;"/>
-        <img id="CH" src="ReviewWordles\Chamblee.png" height="200" style="display: none;"/>
-        <img id="CC" src="ReviewWordles\CivicCenter.png" height="200" style="display: none;"/>
-        <img id="CP" src="ReviewWordles\CollegePark.png" height="200" style="display: none;"/>
-        <img id="DR" src="ReviewWordles\Decatur.png" height="200" style="display: none;"/>
-        <img id="DV" src="ReviewWordles\Doraville.png" height="200" style="display: none;"/>
-        <img id="DW" src="ReviewWordles\Dunwoody.png" height="200" style="display: none;"/>
-        <img id="EL" src="ReviewWordles\EastLake.png" height="200" style="display: none;"/>
-        <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
-        <img id="E/CP" src="ReviewWordles\EdgewoodCandler.png" height="200" style="display: none;"/>
-        <img id="FP" src="ReviewWordles\FivePoints.png" height="200" style="display: none;"/>
-        <img id="G" src="ReviewWordles\garnett.png" height="200" style="display: none;"/>
-        <img id="GS" src="ReviewWordles\GeorgiaState.png" height="200" style="display: none;"/>
-        <img id="CNN" src="ReviewWordles\GWCC.CNNCenter.png" height="200" style="display: none;"/>
-        <img id="HEH" src="ReviewWordles\HamiltonEHolmes.png" height="200" style="display: none;"/>
-        <img id="IC" src="ReviewWordles\IndianCreek.png" height="200" style="display: none;"/>
-        <img id="IP/R" src="ReviewWordles\InmanParkReynoldstown.png" height="200" style="display: none;"/>
-        <img id="KEN" src="ReviewWordles\Kensington.png" height="200" style="display: none;"/>
-        <img id="KM" src="ReviewWordles\KingMemorial.png" height="200" style="display: none;"/>
-        <img id="L/FM" src="ReviewWordles\LakeWoodFort.png" height="200" style="display: none;"/>
-        <img id="L" src="ReviewWordles\Lenox.png" height="200" style="display: none;"/>
-        <img id="LC" src="ReviewWordles\Lindbergh.png" height="200" style="display: none;"/>
-        <img id="MC" src="ReviewWordles\MedicalCenter.png" height="200" style="display: none;"/>
-        <img id="MT" src="ReviewWordles\Midtown.png" height="200" style="display: none;"/>
-        <img id="NA" src="ReviewWordles\NorthAvenue.png" height="200" style="display: none;"/>
-        <img id="NS" src="ReviewWordles\NorthSprings.png" height="200" style="display: none;"/>
-        <img id="O" src="ReviewWordles\Oakland.png" height="200" style="display: none;"/>
-        <img id="PC" src="ReviewWordles\PeachtreeCenter.png" height="200" style="display: none;"/>
-        <img id="S" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>
-        <img id="VC" src="ReviewWordles\VineCity.png" height="200" style="display: none;"/>
-        <img id="WE" src="ReviewWordles\WestEnd.png" height="200" style="display: none;"/>
-        <img id="WL" src="ReviewWordles\WestLake.png" height="200" style="display: none;"/>
-        <img id="SS" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>  -->
-
-
-<!--     
-<script>
-
-var imgHeight = 1025, imgWidth = 1538,      // Image dimensions (don't change these)
-    width =  1100, height = 850,             // Dimensions of cropped region
-    translate0 = [-290, -180], scale0 = 1;  // Initial offset & scale
-
-svg = d3.select("body").append("svg")
-    .attr("width",  width + "px")
-    .attr("height", height + "px");
-
-svg.append("rect")
-    .attr("class", "overlay")
-    .attr("width", width + "px")
-    .attr("height", height + "px")
-    .style("stroke", "#D3D3D3")
-    .style("stroke-width", 3);
-
-svg = svg.append("g")
-    .attr("transform", "translate(" + translate0 + ")scale(" + scale0 + ")")
-    .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
-  .append("g");
-
-svg.append("image")
-    .attr("width",  imgWidth + "px")
-    .attr("height", imgHeight + "px")
-    .attr("xlink:href", "population_marta2.png");
-
-function zoom() {
-  svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
-  console.log("translate: " + d3.event.translate + ", scale: " + d3.event.scale);
-}
-
-</script>
-
- </div>
-
-<h3>Who is taking Marta?</h3>
-
-<script type="text/javascript">
-    // hide all of the pictures
-    document.getElementById("airportpic").style.visibility = "hidden";
-
-    function clicked(id) {
-        var visStatus = document.getElementById(id).style.visibility;
-        if (visStatus == "visible") {
-            document.getElementById(id).style.visibility = "hidden";
-        } else {
-            document.getElementById(id).style.visibility = "visible";
-        }
-
-    }
-</script> -->
-
-
-<!-- <h2>
-
-    <div class = "row">
-        <div class ="column">
-    Legends:
-    <div class="legends">
-        <img class="img2" src="legend.png"alt='legend1'/> 
-    </div>
-    <div class="legends">
-        <img class="img2" src="emojiLegend.png"alt='legend2'/> 
-    </div>
-        </div>
-    <div class ="column">
-    <br></br>
-    Top 5 Busiest Marta Stations
-    <br></br>
-    1) Five Points
-    <br></br>
-    2) College Park
-    <br></br>
-    3) Airport
-    <br></br>
-    4) Peachtree Center
-    <br></br>
-    5) Lindbergh Station
-</div>
-</div>
-</h2> -->
+    <!-- GRID CONTAINING PAGE DETAILS -->
+    <div class="grid-container">
+        <div class="grid-item" id="about-marta">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div> 
+      </div>
 </body>
 
 <script type="text/javascript">
-
-    // formatting
-
 
     console.log("this is being recognized")
 

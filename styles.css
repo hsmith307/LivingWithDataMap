@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600;900&family=Montserrat&family=Open+Sans+Condensed:wght@700&family=Oswald&family=Raleway&family=Space+Grotesk:wght@300;500&display=swap');
+
 .main{
     color: white;
     font-size: 38px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
@@ -10,21 +12,29 @@
     padding: 10px
 }
 
-
+body {
+  background-color: #d3d3d3;
+}
 
 .main:hover {
     color: turquoise;
     background-color: white;
 }
 
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  color: rgb(53, 47, 47);
+  text-shadow: 2px 2px #064d99;
+}
+
 
 h2 {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
     font-style: italic;
     font-weight: lighter;
-    position: relative;
-    margin: auto;
-    text-justify: auto;
+    text-align: left;
 }
 
 img {
@@ -36,7 +46,7 @@ svg {
 }
 
 p {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin: auto;
     padding: 20px;
@@ -135,6 +145,7 @@ p {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 30px;
+    padding-left: 20px;
   }
   
   .topnav a:hover {
@@ -152,11 +163,11 @@ p {
   /* format for table */
 
   th {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     text-decoration: underline;
   }
 
   td {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }

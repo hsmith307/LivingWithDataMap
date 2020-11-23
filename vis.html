@@ -595,21 +595,13 @@ input[type=text] {
             var inputSrc4 = document.getElementById(inputValue4).src
             document.getElementById("img-holder4").innerHTML = "<img src=" + inputSrc4 + " height="+ 200 + ">";
         }
-
-            // hide all of the pictures
-        document.getElementById("airportpic").style.visibility = "hidden";
-
-        function clicked(id) {
-            var visStatus = document.getElementById(id).style.visibility;
-            if (visStatus == "visible") {
-                document.getElementById(id).style.visibility = "hidden";
-            } else {
-                document.getElementById(id).style.visibility = "visible";
-            }
-
-    }
         
-        // formatting
+    </script>
+
+</body>
+<script type="text/javascript">
+
+    // formatting
 
 
     console.log("this is being recognized")
@@ -619,8 +611,8 @@ input[type=text] {
     }
 
     function searchTool(id) {
-        console.log("search tool");
-        var inputSrc = document.getElementById(id).src;
+        console.log("search tool")
+        var inputSrc = document.getElementById(id).src
         modal.style.display = "block";
         document.getElementById("img-holder").innerHTML = "<img src=" + inputSrc + " height="+ 200 + ">";
     }
@@ -630,9 +622,6 @@ input[type=text] {
     var span = document.getElementsByClassName("close")[0];
         span.onclick = function() {
             modal.style.display = "none";
-    }
-    </script>
-
-</body>
-
+}
+</script>
 

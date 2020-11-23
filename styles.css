@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600;900&family=Montserrat&family=Open+Sans+Condensed:wght@700&family=Oswald&family=Raleway&family=Space+Grotesk:wght@300;500&display=swap');
+
 .main{
     color: white;
     font-size: 38px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin-left: 30%;
     margin-right: 30%;
     text-align: center;
@@ -10,21 +12,36 @@
     padding: 10px
 }
 
-
-
 .main:hover {
     color: turquoise;
     background-color: white;
 }
 
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 130px;
+  text-align: center;
+  color: #fca313;
+  text-shadow: 2px 2px gray;
+}
+
+#title {
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
 
 h2 {
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: lighter;
-    position: relative;
-    margin: auto;
-    text-justify: auto;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
 
 img {
@@ -36,7 +53,7 @@ svg {
 }
 
 p {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin: auto;
     padding: 20px;
@@ -117,3 +134,48 @@ p {
       margin: 0%;
       border: 1px;
   }
+
+  /* Top Navigation css */
+
+  .topnav {
+    overflow: hidden;
+    height: 50px;
+    margin-left: 600px;
+    background-color: #d3d3d3;
+  }
+
+  .topnav a {
+    float: left;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    height: 80px;
+  }
+  
+  /* format for table */
+
+  th {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+  }
+
+  td {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+  }
+  

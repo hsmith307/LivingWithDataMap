@@ -10,26 +10,51 @@
   pointer-events: all;
 }
 
+body, html {
+    background-color: #d3d3d3;
+}
+
 </style>
 </head>
 
 <body>
-    <h1 id="h1"><a class="main" href="index.html">A Marta Odyssey</a></h1>
-    <p> 
-        <div class="row">
-            <div class="column1">
-                <li><a href="data.html">Data </a></li>
-                </div>
-                <div class="column1">
-                <li><a href="ack.html">Acknowledgements </a></li>
-                </div>
-                <div class="column1">
-                <li><a href="place.html">Reviews</a></li>
-                </div>
-            </div>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a class="about" href="vis.html">Visualization Tool</a>
+    <a href="data.html">About</a>
+    <a href="ack.html">Data</a>
+  </div>
+
+  <h1 style="font-size: 50px">Data</h1>
+
+    <h2>Data Visualizations from the Data Source: Data USA, Dekalb County</h2>
+
+    <h3>First off, where in the MARTA map is Dekalb County?</h3>
+
+    <img height="700" style="margin-left: 550px; margin-bottom: 100px;" src="dekalb.png"/>
+
+    <h2>Now, let's look at some data for Dekalb County relating to MARTA.</h2>
+
+    <h3>Dekalb County Commuters</h3>
+
+    <iframe width="60%" height="680px" style="margin-left: 350px; margin-bottom: 100px;" src="https://datausa.io/profile/geo/dekalb-county-ga/housing/mode_transport?viz=true" frameborder="0" ></iframe>
+  
+    <h3>Dekalb County Car Ownership</h3>
+
+    <iframe width="720px" height="480px" style="margin-left: 500px;" src="https://datausa.io/profile/geo/dekalb-county-ga/housing/num_vehicles?viz=true" frameborder="0" ></iframe>
+  
+    <h1 style="font-size: 50px; margin-top: 100px;">Takeaways</h1>
+
+    <p>These datasets show us that many residents of Dekalb County own cars, and it also shows us that
+      despite population increases in the county, the number of people using MARTA to commute for work has
+      stayed about the same. Hopefully by understanding the experiences of the people who take MARTA and how
+      they can be improved, MARTA could increase their numbers and become a more used public transportation system.
     </p>
-    <h2>Sources: </h2>
-    </body>
+
+
+
+
+  </body>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">

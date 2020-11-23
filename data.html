@@ -11,7 +11,43 @@
 }
 
 body, html {
-    background-color: #d3d3d3;
+  /* The image used */
+  background-image: url("marta2bg.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-decoration-color: grey;
+  margin: 0;
+
+}
+
+#box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #54acda;
+  border-width: 4px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  height: 550px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+
+.topnav {
+  width: 760px;
+  margin-top: 10px;
+}
+
+img {
+  height: 50px;
+  margin-right: 160px;
 }
 
 </style>
@@ -26,33 +62,40 @@ body, html {
     <a href="place.html">Explore</a>
   </div>
 
-  <h1 style="font-size: 50px">About</h1>
+  <div id="box">
+        <h1 style="font-size: 50px">About</h1>
+        <img src="about.png"/>
+        <p class="info">
+          Data set link: 
+          <a href="https://datausa.io/profile/geo/dekalb-county-ga" target="_blank"> https://datausa.io/profile/geo/dekalb-county-ga</a><br><br>
 
-    <p class="info">
-        Data set link: https://datausa.io/profile/geo/dekalb-county-ga
--Secondary data set: https://datausa.io/profile/geo/fulton-county-ga 
-About the data set: Our primary data source is a website that provides a variety
- of data on Dekalb County, Georgia. The specific section of data that we are focused 
- on is the experiences of commuters in Dekalb County. The website provides a bar graph 
- that displays a breakdown of average commute times from Dekalb County residents’ homes 
- to their jobs, and how it has changed from 2013 to 2018. Additionally, there is a line graph 
- that tracks how Dekalb county residents have commuted from 2013 to 2018: by motorcycle, public transit, car, 
- bicycle, etc. The site also provides a data visualization that breaks down how many cars are owned by 
- residents of the county. With these various data sets and visualizations, we will be able to gain a 
- better understanding of the experiences of residents in Dekalb county when it comes to commuting to work. 
- After investigating the data, we found certain things interesting and surprising. We were interested 
- in how the commute times had not changed much at all from year to year, and why this was.
- We were also interested in the fact that the numbers stayed steady for every category of how 
- people traveled to work over the course of 5 years, except with the motorcycle and bicycle category. 
- Perhaps this change was seasonal, but it made us wonder why they changed when others stayed steady. 
- A surprising data point to us was the fact that despite seemingly large numbers of people who commute 
- by public transit, less than 5% of people in Dekalb County do not own a car. 
- Of course it is possible that people who own cars do not have enough for 
- every household member to drive to work, but it raised questions. 
+          Secondary data set:
+          <a href="https://datausa.io/profile/geo/fulton-county-ga" target="_blank"> https://datausa.io/profile/geo/fulton-county-ga</a><br><br>
+
+    Our primary data source is a website that provides a variety
+    of data on Dekalb County, Georgia. The specific section of data that we are focused 
+    on is the experiences of commuters in Dekalb County. The website provides a bar graph 
+    that displays a breakdown of average commute times from Dekalb County residents’ homes 
+    to their jobs, and how it has changed from 2013 to 2018. Additionally, there is a line graph 
+    that tracks how Dekalb county residents have commuted from 2013 to 2018: by motorcycle, public transit, car, 
+    bicycle, etc. The site also provides a data visualization that breaks down how many cars are owned by 
+    residents of the county. With these various data sets and visualizations, we will be able to gain a 
+    better understanding of the experiences of residents in Dekalb county when it comes to commuting to work. 
+    After investigating the data, we found certain things interesting and surprising. We were interested 
+    in how the commute times had not changed much at all from year to year, and why this was.
+    We were also interested in the fact that the numbers stayed steady for every category of how 
+    people traveled to work over the course of 5 years, except with the motorcycle and bicycle category. 
+    Perhaps this change was seasonal, but it made us wonder why they changed when others stayed steady. 
+    A surprising data point to us was the fact that despite seemingly large numbers of people who commute 
+    by public transit, less than 5% of people in Dekalb County do not own a car. 
+    Of course it is possible that people who own cars do not have enough for 
+    every household member to drive to work, but it raised questions. 
 
 
 
-    </p>
+        </p>
+  </div>
+
     </body>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">

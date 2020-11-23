@@ -22,7 +22,6 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  text-decoration: underline;
   text-decoration-color: grey;
   margin: 0;
   
@@ -41,18 +40,36 @@ body, html {
   padding: 10px;
   height: 500px;
 }
+
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid #54acda;
+  border-width: 4px;
   padding: 20px;
-  font-size: 30px;
   text-align: center;
   height: 300px;
   margin: 20px;
 }
 
 #about-marta {
-    grid-column-start: span 2;
+  grid-column-start: span 2;
+
+}
+
+#about-tool {
+  grid-column-start: span 3;
+  height: 400px;
+}
+
+#column-p {
+  width: auto;
+  margin-top: -20px;
+}
+
+img {
+  height: 90px;
+  margin-bottom: 20px;
+  margin-right: 130px;
 }
 
 </style>
@@ -74,14 +91,35 @@ body, html {
 
     <!-- GRID CONTAINING PAGE DETAILS -->
     <div class="grid-container">
-        <div class="grid-item" id="about-marta">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>  
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>  
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div> 
+        <div class="grid-item" id="about-marta">
+          <h2>What is MARTA?</h2>
+          <img id="marta=logo" src="martalogo.png"/>
+          <p id="column-p">
+            MARTA, or the Metropolitan Atlanta Rapid Transit Authority, is the city of Atlanta's public transportation system. 
+            MARTA consists of trains and buses that take 
+            citizens around the city. MARTA spans across three different counties in the Atlanta metropolitan area. 
+          </p>
+        </div>
+        <div class="grid-item" id="about-the-data">
+          <h2>The Data</h2>
+          <img src="data.png">
+          <p id="column-p">
+            Despite Atlanta's growing population, data shows that the number of MARTA commuters has barely changed in the past 5 years. 
+            We set out to investigate why this might be. To learn more about the data sets used in this data visualization, navigate to the Data tab.
+          </p>
+  
+        </div>
+        <div class="grid-item" id="about-tool">
+          <h2>Visualization Tool</h2>
+          <img src="tool.png"/>
+          <p id="column-p">
+            In order to investigate the experiences people have with MARTA, we created a tool that allows users to understand the most common experiences at each MARTA station while
+            comparing that to the growth of the population around that station. In order to generate the Wordles that can be seen when clicking on a station on the map, we went through
+            Google Map reviews for each MARTA station, and created a Wordle that shows the most common words used to describe that station. These Wordles show the experiences people have
+            had at a particular station, and since we overlayed the MARTA train map over an Atlanta population growth map, one can easily explore reviews compared to an area's population
+            growth rate. To check out the tool, navigate to the Visualization Tool tab.
+          </p>
+        </div>  
       </div>
 </body>
 

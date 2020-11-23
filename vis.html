@@ -475,55 +475,6 @@ input[type=text] {
           </tr>
     </table>
 
-    <!-- Search Feature -->
-    <!-- <div id="search">
-        <h2>Search a Station Code to see its Wordle.</h2>
-        <h3>Type in the station code in all caps to search, then press enter on your keyboard.</h3>
-        <input type="text" onchange="searchTool()" id="input-box">
-        <div id="img-holder-search"></div>
-    </div> -->
-
-    <!-- Photos stored for search feature -->
-    <!-- <img id="AIRPORT" src="ReviewWordles\Airport.png" height="200" style="display: none;"/>
-    <img id="AC" src="ReviewWordles\ArtsCenter.png" height="200" style="display: none;"/>
-    <img id="ASH" src="ReviewWordles\Ashby.png" height="200" style="display: none;"/>
-    <img id="AV" src="ReviewWordles\Avondale.png" height="200" style="display: none;"/>
-    <img id="B/O" src="ReviewWordles\Brookhaven.png" height="200" style="display: none;"/>
-    <img id="B" src="ReviewWordles\Buckhead.png" height="200" style="display: none;"/>
-    <img id="CH" src="ReviewWordles\Chamblee.png" height="200" style="display: none;"/>
-    <img id="CC" src="ReviewWordles\CivicCenter.png" height="200" style="display: none;"/>
-    <img id="CP" src="ReviewWordles\CollegePark.png" height="200" style="display: none;"/>
-    <img id="DR" src="ReviewWordles\Decatur.png" height="200" style="display: none;"/>
-    <img id="DV" src="ReviewWordles\Doraville.png" height="200" style="display: none;"/>
-    <img id="DW" src="ReviewWordles\Dunwoody.png" height="200" style="display: none;"/>
-    <img id="EL" src="ReviewWordles\EastLake.png" height="200" style="display: none;"/>
-    <img id="EP" src="ReviewWordles\EastPoint.png" height="200" style="display: none;"/>
-    <img id="E/CP" src="ReviewWordles\EdgewoodCandler.png" height="200" style="display: none;"/>
-    <img id="FP" src="ReviewWordles\FivePoints.png" height="200" style="display: none;"/>
-    <img id="G" src="ReviewWordles\garnett.png" height="200" style="display: none;"/>
-    <img id="GS" src="ReviewWordles\GeorgiaState.png" height="200" style="display: none;"/>
-    <img id="CNN" src="ReviewWordles\GWCC.CNNCenter.png" height="200" style="display: none;"/>
-    <img id="HEH" src="ReviewWordles\HamiltonEHolmes.png" height="200" style="display: none;"/>
-    <img id="IC" src="ReviewWordles\IndianCreek.png" height="200" style="display: none;"/>
-    <img id="IP/R" src="ReviewWordles\InmanParkReynoldstown.png" height="200" style="display: none;"/>
-    <img id="KEN" src="ReviewWordles\Kensington.png" height="200" style="display: none;"/>
-    <img id="KM" src="ReviewWordles\KingMemorial.png" height="200" style="display: none;"/>
-    <img id="L/FM" src="ReviewWordles\LakeWoodFort.png" height="200" style="display: none;"/>
-    <img id="L" src="ReviewWordles\Lenox.png" height="200" style="display: none;"/>
-    <img id="LC" src="ReviewWordles\Lindbergh.png" height="200" style="display: none;"/>
-    <img id="MC" src="ReviewWordles\MedicalCenter.png" height="200" style="display: none;"/>
-    <img id="MT" src="ReviewWordles\Midtown.png" height="200" style="display: none;"/>
-    <img id="NA" src="ReviewWordles\NorthAvenue.png" height="200" style="display: none;"/>
-    <img id="NS" src="ReviewWordles\NorthSprings.png" height="200" style="display: none;"/>
-    <img id="OC" src="ReviewWordles\Oakland.png" height="200" style="display: none;"/>
-    <img id="PC" src="ReviewWordles\PeachtreeCenter.png" height="200" style="display: none;"/>
-    <img id="S" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/>
-    <img id="VC" src="ReviewWordles\VineCity.png" height="200" style="display: none;"/>
-    <img id="WE" src="ReviewWordles\WestEnd.png" height="200" style="display: none;"/>
-    <img id="WL" src="ReviewWordles\WestLake.png" height="200" style="display: none;"/>
-    <img id="SS" src="ReviewWordles\SandySprings.png" height="200" style="display: none;"/> -->
-
-
     <!-- Comparison Tool -->
     <div id="comparison-tool">
         <h2>Pick up to 4 Marta Stations to compare.</h2>
@@ -546,7 +497,6 @@ input[type=text] {
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript">
         // make sure all the tools are hidden to begin with
-        document.getElementById("search").style.display = "none";
         document.getElementById("comparison-tool").style.display = "none";
 
         // display different tools based on user input
@@ -555,26 +505,14 @@ input[type=text] {
             var val = document.getElementById("reviews").value;
             console.log(val);
             if (val == "Table View") {
-                document.getElementById("table-view").style.display = "block";
+                document.getElementById("table-view").style.display = "";
                 document.getElementById("comparison-tool").style.display = "none";   
-                document.getElementById("search").style.display = "none";
-            } else if (val == "Search") {
-                document.getElementById("table-view").style.display = "none";
-                document.getElementById("search").style.display = "block";
-                document.getElementById("comparison-tool").style.display = "none";    
             } else if (val == "Comparison Tool") {
                 document.getElementById("table-view").style.display = "none";
-                document.getElementById("search").style.display = "none";
                 document.getElementById("comparison-tool").style.display = "block";    
             }
             
         }
-
-        // function searchTool() {
-        //     var inputValue = document.getElementById("input-box").value;
-        //     var inputSrc = document.getElementById(inputValue).src;
-        //     document.getElementById("img-holder-search").innerHTML = "<img src=" + inputSrc + " height="+ 200 + ">";
-        // }
 
         function compTool() {
             var inputValue1 = document.getElementById("station1").value;
@@ -601,10 +539,7 @@ input[type=text] {
 </body>
 <script type="text/javascript">
 
-    // formatting
-
-
-    console.log("this is being recognized")
+    console.log(document.getElementById("table-view").style.display)
 
     function myfunc(id) {
         console.log(id + " station was clicked!")

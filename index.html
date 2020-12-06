@@ -61,6 +61,11 @@ body, html {
   height: 400px;
 }
 
+#about-form {
+  grid-column-start: span 3;
+  height: 350px;
+}
+
 #column-p {
   width: auto;
   margin-top: -20px;
@@ -119,26 +124,39 @@ img {
             growth rate. To check out the tool, navigate to the Visualization Tool tab.
           </p>
         </div>  
+        <div class="grid-item" id="about-form">
+          <h2>Enter Your Experience</h2>
+          <img src="writing.png"/>
+          <p id="column-p">
+            Have you had an experience with MARTA? If so, we want to hear from you! Fill out this form, and submit your experience. The more data we get, the more accurate this tool will be,
+            allowing us to better inform people about MARTA.
+            <p>
+            <input id="clickMe" type="button" value="Fill Out Form" onclick="fillForm();"/>
+            </p>
+            <div id="form" class="modal">
+              <span class="close">&times;</span>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScsQOdHkM6Wjf3jiPm68mk6Zh2fgbAIGhjNrIzaIj6R3nxE-A/viewform?embedded=true" width="640" height="723" 
+              frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <div id="form-holder"></div>
+          </div>
+      
+          </p>
+        </div> 
       </div>
 </body>
 
 <script type="text/javascript">
 
-    console.log("this is being recognized")
+    console.log("this is being recognized");
 
-    function myfunc(id) {
-        console.log(id + " station was clicked!")
-    }
 
-    function searchTool(id) {
-        console.log("search tool")
-        var inputSrc = document.getElementById(id).src
+    function fillForm() {
+        console.log("filling out form");
         modal.style.display = "block";
-        document.getElementById("img-holder").innerHTML = "<img src=" + inputSrc + " height="+ 200 + ">";
     }
 
     //deals with the modal coming up. Span is the x to close out
-    var modal = document.getElementById("img-div");
+    var modal = document.getElementById("form");
     var span = document.getElementsByClassName("close")[0];
         span.onclick = function() {
             modal.style.display = "none";
